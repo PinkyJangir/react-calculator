@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag:none;
+  -webkit-app-region:none;
+  border-start-end-radius: solid ;
+}
+
+body{
+  background-color: rgb(10, 10, 9);
+  display: grid;
+  place-content: center;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container{
+  height: 80vh;
+  width: 50vh;
+  background-color: rgb(168, 47, 47);
+  border-radius:1rem ;
+  padding:1rem;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(168, 102, 102, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(170, 105, 105, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(156, 118, 118, 0.75);
+}
+
+.wrapper{
+  display: grid;
+  height:100%;
+  width:100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(61fr);
+  gap:10px;
+}
+
+.screen{
+  grid-column: 1/ -1;
+  color: white;
+  text-align: right ;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+}
+
+.btn{
+  display: grid;
+  place-content: center;
+  background-color: rbg(54,52,52);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-weight:bold;
+}
+.btn:hover {
+  background-color: rgb(43, 1, 12);
+}
+
+.light-gray{
+  background-color: rgb(88, 8, 26);;
+  color: rgb(146, 133, 133);
+}
+
+.light-gray:hover{
+  background-color: white;
+}
+
+.orange{
+  background-color: rgb(90, 61, 7);
+}
+
+.orange:hover{
+  background-color: white;
+  color: #eba015;
+}
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 25px;
+  place-content: unset;
+  align-items: center;
+  padding-left: 2rem;
+}
